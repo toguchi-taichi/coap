@@ -3,9 +3,20 @@ html
   head
     title
       | Coap
+    
     = csrf_meta_tags
     = csp_meta_tag
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css'
+    link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css'
+    link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css'
+    script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js'
+    script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js'
+    script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js'
+    meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes" name="viewport" 
+  
   body
     = yield
+
+ 

@@ -1,2 +1,87 @@
-h1 Apples#index
-p Find me in app/views/apples/index.html.slim
+body
+  .container
+    header
+        h1.top-logo
+          = link_to './', class: 'is-show trans'
+            = image_tag '', alt: 'コープ沖縄'
+  
+        <!--ハンバーガーメニュー-->    
+        .ham-menu 
+          span
+      
+        <!--ナビゲーションメニュー-->  
+        nav.content 
+          ul.content-menu data-turbolinks="false"
+            li.content-item
+              = link_to 'コンセプト'
+            li.content-item
+              = link_to '社員紹介'
+            li.content-item
+              = link_to '社長挨拶'
+            li.content-item
+              = link_to '仕事風景'
+    
+    main
+      .main-top
+        .top-content
+          span.wow.fadeInDown data-wow-delay='1s' 己
+          span.wow.fadeInDown data-wow-delay='2s' を
+          span.wow.fadeInUp data-wow-delay='3s' 貫
+          span.wow.fadeInUp data-wow-delay='4s' け
+        
+        
+        <!--画像のスライド-->
+        .slider 
+          = image_tag 'ko-.jpg', class: 'slider-image1'
+          = image_tag 'naru.jpg', class: 'slider-image2'
+          = image_tag 'bi-ru.jpg', class: 'slider-image3'
+          = image_tag 'kan.jpg', class: 'slider-image4'
+        
+          
+      .main-middle
+        .middle-content
+          p.konsept.wow.fadeIn data-wow-delay='1s'
+            | 己を貫け
+            br
+            | 信じた道を突き進め
+    
+          p.konsept.wow.fadeIn data-wow-delay='2s'
+            | 一瞬の感性を大切に
+            br
+            | 常に創造的なイメージを描け
+            
+          p.konsept.wow.fadeIn data-wow-delay='3s'
+            | 行動しろ やり抜け 結果で証明しろ
+            br
+            | 理屈なんて述べてる暇はない
+            
+          p.konsept.wow.fadeIn data-wow-delay='4s'
+            | 感情を解放しろ
+            br
+            | 常にストイックであれ
+            
+          p.konsept.wow.fadeIn data-wow-delay='5s'
+            | バカになれ 全ての事にワクワクしろ
+            br
+            | 常に目を輝かせろ
+      
+          p.konsept.wow.fadeIn data-wow-delay='6s'
+            | 自分を俯瞰しろ
+            br
+            | 道から逸れているなら修正しろ
+            
+          p.konsept.wow.fadeIn data-wow-delay='7s'
+            | 自由を追い求めろ
+            br
+            | そこに待つは幸せのみ
+            
+            
+        .middle-syoukai
+          h1.wow.fadeIn data-wow-delay='1s'  経歴紹介
+          .syoukai-image
+            = image_tag 'rokutokso.png'
+            p.wow.fadeIn  
+              | 平成４年生まれの今年２７歳。
+        
+        
+      

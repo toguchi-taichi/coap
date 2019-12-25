@@ -1,0 +1,22 @@
+
+.ham-menu.click{
+    width:42px;
+    height:38px;
+    z-index:100;
+}
+
+.ham-menu.click span{
+    background-color:transparent;
+    left:10px;
+}
+
+.ham-menu.click span::before{
+    transform:rotate(45deg);
+    top:50%;
+    
+}
+        
+.ham-menu.click span::after{
+    transform:rotate(-45deg);
+    bottom:50%;
+}

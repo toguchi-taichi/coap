@@ -48,6 +48,7 @@ group :development, :test do
   gem 'pry-doc'    
   gem 'pry-byebug' 
   gem 'pry-stack_explorer'
+  gem 'letter_opener'
 end
 
 group :development do
